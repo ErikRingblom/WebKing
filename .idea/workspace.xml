@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35649f3f-6116-4aa0-ad39-b8df390e2795" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/HEADER.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/WebkingLogo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/hamburgerMenu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/HEADERf.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/AboutUs.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/aboutUs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/Contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/Product.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Webking.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/AboutUs.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/aboutUs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/Contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/HEADER.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611831925628</updated>
       <workItem from="1611831931236" duration="625000" />
-      <workItem from="1611912926904" duration="9843000" />
+      <workItem from="1611912926904" duration="11438000" />
     </task>
     <servers />
   </component>
