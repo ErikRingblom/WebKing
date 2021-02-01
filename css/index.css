@@ -22,6 +22,7 @@ img {
     width: 95%;
     max-width: 120rem; /** = 1200px; **/
     margin: 0 auto;
+    min-width: 3.5rem;
 
 
 }
@@ -138,6 +139,8 @@ grid-area: section;
 .site-header {
     background-color: #333333;
     padding: 1rem 0 3rem 0;
+    min-height: 40rem;
+    
 }
 .site-header.start {
     background-position: center center;
@@ -181,12 +184,7 @@ grid-area: section;
     margin: 0;
     color: #ffffff;
 }
-.nav-button{
-    position:absolute;
-    width: 36px;
-    height:36px;
 
-}
 
 
 
@@ -196,7 +194,8 @@ grid-area: section;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-
+        
+        
     }
     .container-footer {
         display: flex;
@@ -205,8 +204,12 @@ grid-area: section;
     .site-footer nav {
         display: block;
     }
-    .contenido-header{
+    .container-header{
         text-align: left;
+        
+    }
+    .site-header{
+        min-height: 20rem;
     }
     .nav-button{
         position:absolute;
