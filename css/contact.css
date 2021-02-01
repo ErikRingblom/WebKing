@@ -54,7 +54,11 @@ h4 {
 }
 
 .contained-center {
-    max-width: 800px;
+    display: grid;
+    max-width: 1200px;
+    position: center;
+    margin: auto 0;
+
 }
 
 /** Navigation **/
@@ -104,8 +108,8 @@ select {
     border-radius: 1rem;
 }
 input[type="radio"]{
-    width: auto;
-    margin: 0;
+    width: 100px;
+    margin: auto 0;
 }
 select {
     -webkit-appearance: none;
@@ -114,11 +118,22 @@ select {
 textarea {
     height: 20rem;
 }
+.main-form{
+    max-width:800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .form-contact {
-    max-width:30rem;
+    max-width:35rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+fieldset{
+    width: 800px;
 }
 
 /** button **/
