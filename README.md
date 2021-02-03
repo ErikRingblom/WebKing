@@ -1,4 +1,4 @@
 # WebKing
 # LOGO
-![](img/Webking.png)
+![](img/WebkingLogo.png)
  
