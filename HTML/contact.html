@@ -10,108 +10,101 @@
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="script" href="../JS/index.js">
 </head>
-<body>
-<!-- <div class="contained-center"> -->
-<header class="site-header start">
-    <div class="container container-header">
-        <div class="hamburgerMenu">
-           
-            <a href="/">
-                <img src="../img/WebKingLogo.jpg" alt="WebKing Logo">
-            </a>
-
-            <div class="mobile-menu">
-                <a href="#navigation">
-                    <img src="../img/hamburgerMenu.svg" alt="Icon Menu">
+    <body>
+            <header class="container mainLogo">
+                <a href="index.html">
+                    <img src="../img/WebKingLogo.jpg" alt="WebKing Logo">
                 </a>
-            </div>
+            </header> <!-- Main logo section-->
 
-           <nav  id="navigation"  class="navigation">
-                <a href="product.html">Produkter</a>
-                <a href="aboutUs.html">Om Oss</a>
-                <a href="contact.html">Kontakta oss</a>
-            </nav>
+            <div class="nav-bg">
 
+                    <div class="mobile-menu">
+                        <a href="#navigation">
+                            <img src="../img/hamburgerMenu.svg" alt="Icon Menu">
+                        </a>
+                    </div>
+
+                    <nav  id="navigation"  class="container  fw-700 navigation-primary ">
+                        <a href="index.html">Home</a>
+                        <a href="product.html">Produkter</a>
+                        <a href="product.html">Fyndvara</a>
+                        <a href="aboutUs.html">Om Oss</a>
+                        <a href="contact.html">Kontakta Oss</a>
+                    </nav>
         </div>
-    </div> <!-- container -->
-</header>
 
-<main class="container section contained-center">
-   
-        <a href="/">
-            <img src="../img/Web-banner-contact-us-se.jpg" alt="Kontakta oss Banner-img">
-        </a>
-  
+            <section class="banner-top"></section>
 
-    <h2 class="fw-300 center-text">Fyll i formularet</h2>
-
-    <form class="main-form" action="">
-        <fieldset>
-            <legend>Personligt information</legend>
-            <label for="namn">Namn:</label>
-            <input type="text" id="namn" placeholder="Ditt namn">
-
-            <label for="email">E-mail: </label>
-            <input type="email" id="email" placeholder="Ditt Email" required>
-
-            <label for="telefon">Telefon:</label>
-            <input type="tel" id="telefon" placeholder="Ditt telefonnummer" required>
-
-            <label for="mesagge">Meddelande: </label>
-            <textarea  id="mesagge"></textarea>
-
-        </fieldset>
+        <main class="container section contained-center">
 
 
-        <fieldset>
-            <legend>Information om Ärendet</legend>
-            <label for="options">Vad handlar ditt ärendet om:</label>
-            <select id="options">
-                <option value="" disabled selected>-- Välj ett --</option>
-                <option value="Product">Om en produkt</option>
-                <option value="delivery">Om en leverans</option>
-            </select>
 
-            <label>Hur många:</label>
-            <input type="number" min="0" max="100" step="1">
-        </fieldset>
+            <h2 class="fw-700 center-text">Fyll i formularet</h2>
 
-        <fieldset>
-            <legend>Contact</legend>
+            <form class="main-form" action="">
+                <fieldset>
+                    <legend>Personligt information</legend>
+                    <label for="namn">Namn:</label>
+                    <input type="text" id="namn" placeholder="Ditt namn">
 
-            <p>Hur vill du bli kontaktad:</p>
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" placeholder="Ditt Email" required>
 
-            <div class="form-contact">
-                <label for="telefon1">Telefon</label>
-                <input type="radio" name="contact" value="telefon" id="telefon1">
+                    <label for="telefon">Telefon:</label>
+                    <input type="tel" id="telefon" placeholder="Ditt telefonnummer" required>
+
+                    <label for="mesagge">Meddelande: </label>
+                    <textarea  id="mesagge"></textarea>
+                </fieldset>
 
 
-                <label for="email1">E-mail</label>
-                <input type="radio" name="contact" value="email" id="email1">
+                <fieldset>
+                    <legend>Information om Ärendet</legend>
+                    <label for="options">Vad handlar ditt ärendet om:</label>
+                    <select id="options">
+                        <option value="" disabled selected>-- Välj ett --</option>
+                        <option value="Product">Om en produkt</option>
+                        <option value="delivery">Om en leverans</option>
+                    </select>
+                    <label>Hur många:</label>
+                    <input type="number" min="0" max="100" step="1">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contact</legend>
+
+                    <p>Hur vill du bli kontaktad:</p>
+
+                    <div class="form-contact">
+                        <label for="telefon1">Telefon</label>
+                        <input type="radio" name="contact" value="telefon" id="telefon1">
+                        <label for="email1">E-mail</label>
+                        <input type="radio" name="contact" value="email" id="email1">
+                    </div>
+
+                    <p>Om du har välj telefon, när passar att ringa dig</p>
+                    <label for="date">Datum:</label>
+                    <input type="date" id="date">
+
+                    <label for="time">Tid:</label>
+                    <input type="time" id="time" min="09:00" max="18:00">
+                </fieldset>
+
+                <input type="submit" value="Skicka" class="button button-green">
+
+            </form>
+        </main>
+
+        <footer class="site-footer section">
+            <div class="container-footer">
+                <nav class="navigation">
+                    <a href="aboutUs.html">Om Oss</a>
+                    <a href="product.html">Produkter</a>
+                    <a href="contact.html">Kontakta oss</a>
+                </nav>
+                <p class="copyright">All rigths reserved 2021 &copy; </p>
             </div>
-
-            <p>Om du har välj telefon, när passar att ringa dig</p>
-            <label for="date">Datum:</label>
-            <input type="date" id="date">
-
-            <label for="time">Tid:</label>
-            <input type="time" id="time" min="09:00" max="18:00">
-        </fieldset>
-
-        <input type="submit" value="Skicka" class="button button-green">
-    </form>
-</main>
-<!-- </div> -->
-
-<footer class="site-footer section">
-    <div class="container-footer">
-        <nav class="navigation">
-            <a href="aboutUs.html">Om Oss</a>
-            <a href="product.html">Produkter</a>
-            <a href="contact.html">Kontakta oss</a>
-        </nav>
-        <p class="copyright">All rigths reserved 2021 &copy; </p>
-    </div>
-</footer>
-</body>
+        </footer>
+    </body>
 </html>
