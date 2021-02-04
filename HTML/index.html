@@ -8,7 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="script" href="../JS/index.js">
+    <script src="../JS/index.js"></script>
+    <style>.slides{
+        display: block;
+    }</style>
 </head>
 <body>
 
@@ -37,8 +40,12 @@
     <section class=" shadow container fw-300 ">
 
             <div class="slideshow-sidebar-container section ">
-                <div class="slideshow">
-                <img src="../img/DB_Photos/slide1.png" alt="promo-slides">
+                <div class="slideshow" >
+                 <img class="slides" src="../img/DB_Photos/TV.png" alt ="prom-slides">
+                 <img class="slides" src="../img/DB_Photos/slide1.png" alt="promo-slides">
+
+                    <button  onclick="newPicture(-1)">&#10094;</button>
+                    <button  onclick="newPicture(1)">&#10095;</button>
                 </div>
                 <section class="links sidebar ">
                     <div>

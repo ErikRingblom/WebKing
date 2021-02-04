@@ -1,6 +1,18 @@
-function toggleHamburger(){
-    navbar.classList.toggle("showNav")
-    ham.classList.toggle("showClose")
+
+var slideIndex = 1;
+showPicture(slideIndex);
+
+function newPicture(n) {
+    showPicture(slideIndex += n);
 }
 
-ham.addEventListener("click", toggleHamburger)
+function showPicture(n) {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display="block"
+}
