@@ -27,6 +27,13 @@ img {
 
 }
 
+.shadow{
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    background-color: #ffffff;
+    margin-top: 2rem;
+
+    border-radius: 1rem;
+}
 h1 {
     font-size: 3.8rem;
 }
@@ -85,6 +92,19 @@ h4 {
     display: none;
 }
 
+/*promo-slides*/
+
+.promo-slides {
+    text-align:center;
+}
+.promo-slides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.promo-slides{
+    text-align: center;
+}
 /** button **/
 .button {
     color: green;
@@ -234,5 +254,10 @@ grid-area: section;
     }
     .navigation a:last-of-type {
         margin: 0;
+    }
+    .promo-slides {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 1rem;
     }
 }
