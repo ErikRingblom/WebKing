@@ -226,8 +226,6 @@ grid-area: section;
 
 
 
-
-
 @media (min-width: 768px) {
     .hamburgerMenu {
         display: flex;
