@@ -153,7 +153,7 @@ textarea {
 }
 .main-form{
     max-width:800px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -161,7 +161,7 @@ textarea {
     width: min(60rem, 100%);
 }
 .form-contact {
-    max-width:35rem;
+    max-width:35%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -212,6 +212,14 @@ fieldset{
     display: none;
 }
 
+.navigation-secundary:target {
+    display: block;
+}
+.navigation-secundary {
+    display: none;
+}
+
+
 .copyright {
     margin: 0;
     color: #ffffff;
@@ -223,47 +231,7 @@ fieldset{
         flex-direction: row;
         justify-content: space-between;
     }
-
-}
-
-@media (max-width:786px) {
-    .banner-top{
-        background-size: contain;
-        height: 30rem;
-         padding: 1rem 0 3rem 0;
-    }
-    .mobile-menu img {
-        display: inline-block;
-        width: 5rem;
-    }    
-    .navigation:target {
-        display: block;
-    }
-    .navigation {
-        display: none;
-    }
     
-}
-@media (max-width: 486px) {
-    .banner-top{
-        display: none;
-    }
-
-}
-/*
-@media (min-width: 768px) {
-    .hamburgerMenu {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-
-
-    }
-    .button {
-        display: inline-block;
-        flex: 0 0 auto;
-    }
-
     .container-footer {
         display: flex;
         justify-content: space-between;
@@ -271,40 +239,35 @@ fieldset{
     .site-footer nav {
         display: block;
     }
- /*   .container-header{
-        text-align: left;
-    }
-    .mainLogo{
-        text-align: center;
-    }
-
-    .site-header{
-        min-height: 2rem;
-    }
     
-    .nav-button{
-        position:absolute;
-        width: 36px;
-        height:36px;
-        display: block;
-    }
-    .button {
+    .navigation-secundary a {
         display: inline-block;
-        flex: 0 0 auto;
-    }
-    .navigation {
-        display: block;
-    }
-    .mobile-menu {
-        display: none;
-    }
-    .navigation a {
-        display: inline-block;
-        font-size: 1.8rem; /** = 18px **
+        font-size: 1.8rem; /** = 18px **/
         margin-right: 2rem;
     }
-    .navigation a:last-of-type {
+    .navigation-secundary a:last-of-type {
         margin: 0;
     }
+    
+
 }
-*/
+
+@media (max-width:786px) {
+    .banner-top{
+        background-size: contain;
+        height: 30rem;
+        padding: 1rem 0 3rem 0;
+        display: none;
+
+    }
+    .mobile-menu img {
+        display: inline-block;
+        width: 5rem;
+    }    
+}
+
+@media (min-width: 486px) {
+    .banner-top{
+        display: block;
+    }
+}

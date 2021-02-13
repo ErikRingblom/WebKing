@@ -7,6 +7,7 @@
     --black:#000;
     --lightBlue:#0097A7;
     --grey:#333333;
+    --green:#71B100;
 
     --mainFont: 'Staatliches', cursive;
 }
@@ -70,6 +71,7 @@ h4 {
 
 .container {
     max-width: 120rem;
+    width: 95%;
     margin: 0 auto; /*with this we center the container*/
 }
 
@@ -83,16 +85,11 @@ h4 {
 .mainLogo{
     text-align: center;
 }
-.banner-top{
-    background-image: url(../img/Web-banner-contact-us-se.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40rem;
-    display: flex;
-    align-items: center;
-    padding: 1rem 0 3rem 0;
+
+.hamburgerMenu {
+    padding-top: 3rem;
 }
+
 
 /** Navigation **/
 .mobile-menu{
@@ -122,6 +119,23 @@ h4 {
     color:var(--black);
 
 }
+
+.navigation-secundary a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
+
+.navigation-secundary a:hover {
+    color:var(--green);
+}
+
+/** Mobile Menu **/
+.mobile-menu img {
+    width: 5rem;
+}
+
 /**Grid**/
 .grid{
     display: grid;
@@ -163,6 +177,7 @@ h4 {
     background-color:var(--grey);
     margin: 0;
 }
+
 .container-footer {
     padding: 3rem 0;
     margin: 2%;
@@ -173,6 +188,13 @@ h4 {
     display: none;
 }
 
+.navigation-secundary:target {
+    display: block;
+}
+.navigation-secundary {
+    display: none;
+}
+
 .copyright {
     margin: 0;
     color:var(--white);
@@ -180,7 +202,7 @@ h4 {
 
 
 /**MEDIA QUERIES**/
-@media (min-width: 786px) {
+@media (min-width: 768px) {
     .navigation-primary{
         flex-direction: row;
         justify-content: space-between;
@@ -201,29 +223,21 @@ h4 {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-}
-
-@media (max-width:786px) {
-    .banner-top{
-        background-size: contain;
-        height: 30rem;
-         padding: 1rem 0 3rem 0;
+    
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
     }
-    .mobile-menu img {
-        display: inline-block;
-        width: 5rem;
-    }    
-    .navigation:target {
+    .site-footer nav {
         display: block;
     }
-    .navigation {
-        display: none;
+    
+    .navigation-secundary a {
+        display: inline-block;
+        font-size: 1.8rem; /** = 18px **/
+        margin-right: 2rem;
     }
-}
-
-@media (max-width: 486px) {
-    .banner-top{
-        display: none;
+    .navigation-secundary a:last-of-type {
+        margin: 0;
     }
-
 }

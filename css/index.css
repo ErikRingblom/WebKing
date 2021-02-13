@@ -80,7 +80,7 @@ h4 {
 /** Utilities **/
 
 .section {
-    margin: 2rem  0 2rem 0;
+    margin: 2rem 0;
 
 }
 .fw-300 {
@@ -231,8 +231,6 @@ grid-area: section;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        
-        
     }
     .container-footer {
         display: flex;
