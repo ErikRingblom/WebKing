@@ -39,18 +39,29 @@
     </section>
 
     <section id="product-price">
-      <h3 id="total-price"> Total kostnad: <span>10000</span></h3>
+      <h3 id="total-price"> Total kostnad: <span id="Price">10000</span></h3>
         <p id="ex-tax-price"> ex moms: </p>
         <button id="shoppingcart"> lägg i varukorg</button>
     </section>
 
     <div id="context-container">
-       <button class="Tab"> Teknisk Information</button>
-        <button class="Tab">Recensioner</button>
-        
+        <button id="tecnical-information-tab" class="Tab" onclick="openTab(event, 'tecnical-information' )"> Teknisk Information</button>
+        <button id="rewievs-tab" class="Tab" onclick="openTab(event, 'rewievs')">Recensioner</button>
 
+
+    <div id="tecnical-information" class="tabcontent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam distinctio error, itaque modi numquam pariatur perferendis quas quis?
+            Aspernatur cumque error ex facere hic natus officiis quibusdam sequi voluptas voluptatibus.
+        </p>
     </div>
-
+    <div id="rewievs" class="tabcontent">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Alias dolorem doloribus exercitationem itaque maxime nobis provident quod velit voluptates!
+            Consequuntur doloribus hic id illo minus recusandae repellendus sapiente tempora voluptas!
+        </p>
+    </div>
+    </div>
 </div>
 
 
