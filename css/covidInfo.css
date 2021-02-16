@@ -202,29 +202,33 @@ fieldset{
 }
 
 /** button **/
-.button {
-    color: white;
-    font-weight: 700;
+button {
+    border: 1px solid rgba(0, 150, 219, 1);
+    border-radius: 4px;
+    color: rgba(0, 150, 219, 1);
+    background-color: transparent;
     text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    font-size: 1.8rem;
-    padding: 1rem 3rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    font-size: 14px;
+    line-height: 2.34;
+    margin: 0 5px;
+    padding: 0 30px;
     display: inline-block;
     text-align: center;
-    border: none;
+    
     flex: 0 0 100%;
 }
-.button:hover {
+button:hover {
     cursor: pointer;
+    background-color: rgba(0, 150, 219, 1);
+    color: #ddd;
 }
-.button-yellow {
-    background-color: #E08709;
-}
-.button-green {
-    background-color: #71B100;
+
+button:disabled,
+button[disabled]{
+  cursor: auto;
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
 
 /** Footer **/

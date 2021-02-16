@@ -2,10 +2,8 @@ let counter = 0;
 let totalCounter = 0;
 let clicked = false
 
-
-
 $(document).ready(function(){
-    let $sectionAricle = $(".article-votes-controls")
+    let $sectionAricle = $(".article-votes-question")
     $sectionAricle.hover(function(){
 
         if ($(window).width() > 935) {
@@ -16,9 +14,8 @@ $(document).ready(function(){
          }
    
       }, function(){
-    
-        let container = $(".popup");         
-          container.hide();
+            
+        $(".popup").hide();
     
     }); 
   });
@@ -30,6 +27,8 @@ $(document).ready(function(){
             totalCounter++
         }
         
+      //  $(".popup").hide();
+
         displayCounter()
         $(this).attr("disabled", true)
         clicked = true
@@ -46,6 +45,8 @@ $(document).ready(function(){
         if(!clicked){
             totalCounter++
         }
+                
+      //  $(".popup").hide();
 
         displayCounter()
         $(this).attr("disabled", true)
