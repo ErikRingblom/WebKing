@@ -8,30 +8,32 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/tv.css">
+    <link rel="stylesheet" href="../css/burgerMenu.css">
+
 </head>
 <body>
+
 <header class="container mainLogo">
     <a href="index.html">
         <img src="../img/WebKingLogo.jpg" alt="WebKing Logo">
     </a>
 </header> <!-- Main logo section-->
 
-<div class="nav-bg">
-
-    <div class="mobile-menu">
-        <a href="#navigation">
-            <img src="../img/hamburgerMenu.svg" alt="Icon Menu">
-        </a>
+<div class="nav-bg ">
+    <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
     </div>
 
-    <nav  id="navigation"  class="container  fw-700 navigation-primary ">
+    <nav id="navigation" class="container fw-700 navigation-primary active">
         <a href="index.html">Home</a>
         <a href="product.html">Produkter</a>
-        <a href="product.html">Fyndvara</a>
+        <a href="fyndvara.html">Fyndvara</a>
         <a href="aboutUs.html">Om Oss</a>
         <a href="contact.html">Kontakta Oss</a>
     </nav>
 </div>
+
+
 <div id="content-container">
     <h2 id="product-name"> Samsung TV</h2>
     <section id="product-picture">
@@ -44,6 +46,13 @@
         <button id="shoppingcart"> lägg i varukorg</button>
     </section>
 
+    <div id="about">
+        <p>Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit.
+            A, accusantium architecto at dicta distinctio esse est id ipsa iure possimus quasi qui veniam veritatis?
+            Deserunt iure minus praesentium rem voluptates!</p>
+
+    </div>
     <div id="context-container">
         <button id="tecnical-information-tab" class="Tab" onclick="openTab(event, 'tecnical-information' )"> Teknisk Information</button>
         <button id="rewievs-tab" class="Tab" onclick="openTab(event, 'rewievs')">Recensioner</button>
@@ -66,8 +75,8 @@
 
 
 <footer class="site-footer section">
-    <div class="container-footer">
-        <nav class="navigation">
+    <div class="container container-footer">
+        <nav class="navigation-secundary">
             <a href="aboutUs.html">Om Oss</a>
             <a href="product.html">Produkter</a>
             <a href="contact.html">Kontakta oss</a>
@@ -76,6 +85,7 @@
     </div>
 </footer>
 <script src="../JS/tv.js"></script>
+<script src="../JS/burgerMenu.js"></script>
 
 </body>
 </html>
