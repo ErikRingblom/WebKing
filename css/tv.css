@@ -1,3 +1,16 @@
+:root{
+    --primary:#9c27b0;
+    --primaryDark:#89119d;
+    --secundary: #FFC107;
+    --secundaryDark: #rgb(233,287,2);
+    --white: #ffffff;
+    --black:#000;
+    --lightBlue:#0097A7;
+    --grey:#333333;
+    --green:#71B100;
+
+    --mainFont: 'Staatliches', cursive;
+}
 html {
     box-sizing: border-box;
     font-size: 62.5%; /** Reset for REMS - 62.5% = 10px of 16px **/
@@ -11,15 +24,19 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;  /** Reset for REMS - 62.5% = 10px of 16px **/
     line-height: 2;
-    background-image: linear-gradient(to top, #DFE9F3 0%, #ffffff 100%);
+    background-image: var(--white);
 }
 
 /** Global **/
 
 img {
     max-width: 100%;
-    margin: auto;
-    margin-top: 2rem;
+}
+
+h1,h2,h3{
+    text-align: center;
+    color: var(--black);
+    font-family: var(--mainFont);
 }
 
 h1 {
@@ -36,12 +53,6 @@ h3 {
 
 h4 {
     font-size: 2.6rem;
-}
-button{
-    background-color: #0097A7;
-    width: 40%;
-    height: 20%;
-    border-radius: 5px;
 }
 
 /** Utilities **/
@@ -61,7 +72,7 @@ button{
 .container {
     max-width: 120rem;
     width: 95%;
-    margin: 0 auto;
+    margin: 0 auto; /*with this we center the container*/
 }
 
 .contained-center,
@@ -75,13 +86,9 @@ button{
     text-align: center;
 }
 
-
 /** Navigation **/
-.mobile-menu{
-    display: none;
-}
 .nav-bg{
-    background-color: #0097A7;
+    background-color: var(--lightBlue);
 
 }
 .navigation-primary{
@@ -95,15 +102,32 @@ button{
 }
 .navigation-primary a{
     padding: 1rem 2rem;
-    color: #ffffff;
+    color:var(--white);
     text-decoration: none;
     font-size: 1.4rem;
 }
 .navigation-primary a:hover {
-    background-color: #FFC107;
-    color: #000000;
+    background-color:var(--secundary);
+    color:var(--black);
 
 }
+
+.navigation-secundary a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
+
+.navigation-secundary a:hover {
+    color:var(--green);
+}
+
+/** Mobile Menu **/
+.mobile-menu img {
+    width: 5rem;
+}
+
 
 #content-container{
     display: grid;
@@ -114,8 +138,12 @@ button{
     grid-template-areas:
             "product-name  product-name product-name product-name product-name  product-name "
             " product-picture  product-picture  product-picture  product-price product-price product-price"
+            "about about about . . ."
             "context-container context-container context-container context-container context-container context-container";
 
+}
+button{
+    background-color:var(--lightBlue) ;
 }
 #product{
     width: 75%;
@@ -178,6 +206,9 @@ align-self: center;
 "tab-Tec tab-Tec tab-Tec tab-Rew tab-Rew tab-Rew"
 "tabcontent tabcontent tabcontent tabcontent tabcontent tabcontent";
 }
+#about{
+    grid-area: about;
+}
 .tabcontent{
     grid-area: tabcontent;
     display: none;
@@ -188,25 +219,49 @@ align-self: center;
 
 
 .site-footer {
-    background-color: #333333;
+    background-color:var(--grey);
     margin: 0;
 }
+
 .container-footer {
     padding: 3rem 0;
-    text-align: center
+    margin: 2%;
+    text-align: center;
 }
 
+.navigation-secundary a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
+
+.navigation-secundary a:hover {
+    color:var(--green);
+}
 .site-footer nav {
+    display: none;
+}
+
+
+.navigation-secundary:target {
+    display: block;
+}
+.navigation-secundary {
     display: none;
 }
 
 .copyright {
     margin: 0;
-    color: #ffffff;
+    color:var(--white);
 }
 
 
+
 @media (max-width:768px) {
+    #navigation.active {
+        display:none
+    }
     .banner-top{
         background-size: contain;
         height: 30rem;
@@ -224,6 +279,31 @@ align-self: center;
     }
 
 }
+
+@media (min-width: 768px) {
+    .navigation-primary{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .site-footer nav {
+        display: block;
+    }
+
+    .navigation-secundary a {
+        display: inline-block;
+        font-size: 1.8rem; /** = 18px **/
+        margin-right: 2rem;
+    }
+    .navigation-secundary a:last-of-type {
+        margin: 0;
+    }
+}
+
 @media (max-width: 486px) {
     #content-container{
         display: grid;
