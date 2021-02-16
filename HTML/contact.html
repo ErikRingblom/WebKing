@@ -42,38 +42,39 @@
 
             <h2 class="fw-700 center-text">Fyll i formularet</h2>
 
-            <form class="main-form" action="">
+            <form class="main-form" onsubmit="alertFunction()">
                 <fieldset>
                     <legend>Personligt information</legend>
-                    <label for="namn">Namn:</label>
-                    <input type="text" id="namn" placeholder="Ditt namn">
+                    <label for="namn">Namn</label>
+                    <input type="text" id="namn" placeholder="Ditt namn" onkeypress="return /[a-z]/i.test(event.key)">
 
-                    <label for="email">E-mail: </label>
+                    <label class="required" for="email">E-mail</label>
                     <input type="email" id="email" placeholder="Ditt Email" required>
 
-                    <label for="telefon">Telefon:</label>
-                    <input type="tel" id="telefon" placeholder="Ditt telefonnummer" required>
+                    <label class="required" for="telephone">Telefon</label>
+                    <input type="number" id="telefon" placeholder="Ditt telefonnummer" required>
 
-                    <label for="mesagge">Meddelande: </label>
-                    <textarea  id="mesagge"></textarea>
+                    <label class="required" for="message">Meddelande</label>
+                    <textarea id="message" required></textarea>
                 </fieldset>
 
 
                 <fieldset>
-                    <legend>Information om Ärendet</legend>
+                    <legend>Information om ärendet</legend>
                     <label for="options">Vad handlar ditt ärendet om:</label>
                     <select id="options">
                         <option value="" disabled selected>-- Välj ett --</option>
                         <option value="Product">Om en produkt</option>
                         <option value="delivery">Om en leverans</option>
+                        <option value="delivery">Service</option>
+                        <option value="delivery">Övrigt</option>
                     </select>
                     <label>Hur många:</label>
                     <input type="number" min="0" max="100" step="1">
                 </fieldset>
 
                 <fieldset>
-                    <legend>Contact</legend>
-
+                    <legend>Kontakt</legend>
                     <p>Hur vill du bli kontaktad:</p>
 
                     <div class="form-contact">
@@ -106,5 +107,6 @@
                 <p class="copyright">All rigths reserved 2021 &copy; </p>
             </div>
         </footer>
+        <script src="../JS/contact.js"></script>
     </body>
 </html>
