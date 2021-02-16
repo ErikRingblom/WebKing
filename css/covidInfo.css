@@ -44,6 +44,7 @@ h4 {
 
 .section {
     margin: 2rem  0 2rem 0;
+    position: relative;
 }
 .fw-300 {
     font-weight: 300;
