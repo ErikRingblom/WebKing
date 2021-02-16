@@ -3,13 +3,12 @@ const navLink = document.getElementById("navigation");
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
+    navLink.classList.remove('active');
     menuBtn.classList.add('open');
-    navLink.classList.add('active');
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
-    navLink.classList.remove('active');
+    navLink.classList.add('active');
     menuOpen = false;
   }
 });
-

@@ -163,6 +163,13 @@ h4 {
     color:var(--white);
 }
 
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px) {
+    #navigation.active {
+        display:none
+    }
+}
 
 /**MEDIA QUERIES**/
 @media (min-width: 768px) {
@@ -171,10 +178,6 @@ h4 {
         justify-content: space-between;
         margin: auto;
     }
-    #navigation.active {
-        display:none
-    }
-    
     .container-footer {
         display: flex;
         justify-content: space-between;
