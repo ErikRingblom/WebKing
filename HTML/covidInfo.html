@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/covidInfo.css">
     <link rel="script" href="../JS/index.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>                   
 </head>
     <body>
             <header class="container mainLogo">
@@ -99,12 +100,12 @@
         </main>
         <section class="container article-vote">
             <span class="article-votes-question">Var denna artikel till hjälp?</span>
-            <div class="article-votes-controls" role="radiogroup">
-                <a class="article-vote-button" aria-selected="false" role="radio" rel="nofollow" title="Ja" href="#"></a>
-                <a class="article-vote-button" aria-selected="false" role="radio" rel="nofollow" title="Nej" href="#"></a>
+            <div class="article-votes-controls">
+                <button class="button-yes">Ja</button>
+                <button class="button-no">Nej</button>
             </div>
             <small class="article-votes-count">
-                <span class="article-vote-label">1328 av 2336 tyckte detta var till hjälp</span>
+                <p id="voteCounter" class="article-vote-label">0 av 0 tyckte detta var till hjälp</p>
             </small>
         </section>
         <footer class="site-footer section">
@@ -117,5 +118,6 @@
                 <p class="copyright">All rigths reserved 2021 &copy; </p>
             </div>
         </footer>
+        <script src="../JS/covidInfo.js"></script> 
     </body>
 </html>
