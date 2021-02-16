@@ -233,11 +233,20 @@ grid-area: section;
 }
 
 
+/**MEDIA QUERIES**/
+
+@media screen and (max-width: 768px) {
+    #navigation.active {
+        display:none
+    }
+}
+
 
 @media (min-width: 768px) {
     .navigation-primary{
         flex-direction: row;
         justify-content: space-between;
+        margin: auto;
     }
     .container-footer {
         display: flex;
@@ -265,9 +274,6 @@ grid-area: section;
     }
     .navigation {
         display: block;
-    }
-    .mobile-menu {
-        display: none;
     }
     .navigation a {
         display: inline-block;

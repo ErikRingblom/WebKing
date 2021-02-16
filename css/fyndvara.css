@@ -87,6 +87,7 @@ h4 {
 }
 
 /** Navigation **/
+
 .nav-bg{
     background-color: var(--lightBlue);
 
@@ -121,11 +122,6 @@ h4 {
 
 .navigation-secundary a:hover {
     color:var(--green);
-}
-
-/** Mobile Menu **/
-.mobile-menu img {
-    width: 5rem;
 }
 
 /**Grid**/
@@ -163,6 +159,7 @@ h4 {
     color:var(--white);
 }
 
+
 /**MEDIA QUERIES**/
 
 @media screen and (max-width: 768px) {
@@ -177,6 +174,7 @@ h4 {
         justify-content: space-between;
         margin: auto;
     }
+    
     .container-footer {
         display: flex;
         justify-content: space-between;

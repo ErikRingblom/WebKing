@@ -8,32 +8,29 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/contact.css">
-    <link rel="script" href="../JS/index.js">
+    <link rel="stylesheet" href="../css/burgerMenu.css">
+
 </head>
     <body>
-            <header class="container mainLogo">
-                <a href="index.html">
-                    <img src="../img/WebKingLogo.jpg" alt="WebKing Logo">
-                </a>
-            </header> <!-- Main logo section-->
-
-            <div class="nav-bg">
-
-                    <div class="mobile-menu">
-                        <a href="#navigation">
-                            <img src="../img/hamburgerMenu.svg" alt="Icon Menu">
-                        </a>
-                    </div>
-
-                    <nav  id="navigation"  class="container  fw-700 navigation-primary ">
-                        <a href="index.html">Home</a>
-                        <a href="product.html">Produkter</a>
-                        <a href="product.html">Fyndvara</a>
-                        <a href="aboutUs.html">Om Oss</a>
-                        <a href="contact.html">Kontakta Oss</a>
-                    </nav>
+        <header class="container mainLogo">
+            <a href="index.html">
+                <img src="../img/WebKingLogo.jpg" alt="WebKing Logo">
+            </a>
+        </header> <!-- Main logo section-->
+    
+        <div class="nav-bg ">
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></a></div>
+            </div>
+            
+            <nav id="navigation" class="container fw-700 navigation-primary active">
+                <a href="index.html">Home</a>
+                <a href="product.html">Produkter</a>
+                <a href="fyndvara.html">Fyndvara</a>
+                <a href="aboutUs.html">Om Oss</a>
+                <a href="contact.html">Kontakta Oss</a>
+            </nav>
         </div>
-
             <section class="banner-top"></section>
 
         <main class="container section contained-center">
@@ -107,6 +104,7 @@
                 <p class="copyright">All rigths reserved 2021 &copy; </p>
             </div>
         </footer>
+        <script src="../JS/burgerMenu.js"></script>
         <script src="../JS/contact.js"></script>
     </body>
 </html>
