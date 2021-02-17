@@ -36,11 +36,17 @@
 
             <div class="slideshow-sidebar-container section ">
                 <div class="slideshow" >
-                 <img class="slides" src="../img/DB_Photos/TV.png" alt ="prom-slides">
+                <a href="tv.html"><img class="slides" src="../img/DB_Photos/TV.png" alt ="prom-slides"></a>
                  <img class="slides" src="../img/DB_Photos/slide1.png" alt="promo-slides">
-
-                    <button  onclick="newPicture(-1)">&#10094;</button>
-                    <button  onclick="newPicture(1)">&#10095;</button>
+                        <div id="Arrows">
+                            <a class="prev" onclick="newPicture(-1)">&#10094;</a>
+                            <a class="next" onclick="newPicture(1)">&#10095;</a>
+                        </div>
+                    <div id="Dots">
+                        <span class="dot" onclick="currentPicture(1)"></span>
+                        <span class="dot" onclick="currentPicture(2)"></span>
+                        <span class="dot" onclick="currentPicture(3)"></span>
+                    </div>
                 </div>
                 <section class="links sidebar ">
                     <div>
@@ -60,35 +66,42 @@
 
     <div class="slideshow-sidebar-container section">
         <section class="slideshow">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Asperiores aspernatur at autem blanditiis cum dolore ea eveniet,
-                excepturi facere iure laudantium magnam,
-                natus officiis quia quod rerum tempore tenetur voluptas?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Ad asperiores corporis cumque dolore ducimus ea eligendi,
-                esse iusto laboriosam nemo nihil numquam perferendis quae quaerat,
-                quis quisquam ratione sed voluptate!
-            </p>
-        </section>
-    <aside class="sidebar">
-        <div id="sidebar-nav">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo unde aperiam quos possimus,
-                maiores sit vero similique magni eaque perferendis rem
-                nesciunt aliquid quam? Iste repellat quia laboriosam modi dolores!
+           <div id="panel-heading">
+                <h2>Produkter</h2>
+           </div>
+            <div id="panel">
+                    <section class="products">
+                       <a> <img id="product1" src="../img/DB_Photos/slide1.png"></a>
+                        <h4 > Samsung telefon</h4>
+                        <p>
+                            lite om telefonen
+                        </p>
+                    </section>
+                    <section class="products">
+                      <a href="tv.html"><img id="product2" src="../img/DB_Photos/TV.png"></a>
+                        <h4 > TV Samsung</h4>
+                        <p>
+                            lite om tv
+                        </p>
+                    </section>
 
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo unde aperiam quos possimus,
-                maiores sit vero similique magni eaque perferendis rem
-                nesciunt aliquid quam? Iste repellat quia laboriosam modi dolores!Lorem ipsum dolor sit amet
-                consectetur, adipisicing elit. Explicabo unde aperiam quos possimus,
-                maiores sit vero similique magni eaque perferendis rem
-                nesciunt aliquid quam? Iste repellat quia laboriosam modi dolores!Lorem ipsum dolor sit amet
-                consectetur, adipisicing elit. Explicabo unde aperiam quos possimus,
-                maiores sit vero similique magni eaque perferendis rem
-                nesciunt aliquid quam? Iste repellat quia laboriosam modi dolores!
-        </div>
+
+            </div>
+        </section>
+    <aside id="sidebar-for-special">
+          <div id="sidebar">
+              <div id="Sidebar-heading">
+                  <h2> Fyndvaror</h2>
+              </div>
+
+              <div id="sidebar-content">
+                  <section class="products">
+                      <p>test</p>
+                  </section>
+
+              </div>
+
+          </div>
     </aside>
 </div>
 
