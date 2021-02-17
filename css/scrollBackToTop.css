@@ -63,7 +63,7 @@
   }
   
   .btnExit {
-    animation-duration: 0.25s;
+    animation-duration: 0.5s;
     animation-fill-mode: both;  
     animation-name: btnExit;
   }
@@ -72,6 +72,7 @@
   @keyframes btnExit {
     from {
       opacity: 1;
+      transform:  rotate(180deg);
     }
     to {
       opacity: 0;
