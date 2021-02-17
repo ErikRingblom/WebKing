@@ -8,36 +8,38 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/covidInfo.css">
+        <link rel="stylesheet" href="../css/burgerMenu.css">
+        <link rel="stylesheet" href="../css/scrollBackToTop.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="script" href="../JS/index.js">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>                   
     </head>
+    
     <body>
+
         <header class="container mainLogo">
             <a href="index.html">
                 <img src="../img/WebKingLogo.jpg" alt="WebKing Logo">
             </a>
         </header> <!-- Main logo section-->
-
-        <div class="nav-bg">
-
-            <div class="mobile-menu">
-                <a href="#navigation">
-                    <img src="../img/hamburgerMenu.svg" alt="Icon Menu">
-                </a>
+    
+        <div class="nav-bg ">
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
             </div>
-
-            <nav  id="navigation"  class="container  fw-700 navigation-primary ">
+            
+            <nav id="navigation" class="container fw-700 navigation-primary active">
                 <a href="index.html">Home</a>
                 <a href="product.html">Produkter</a>
-                <a href="product.html">Fyndvara</a>
+                <a href="fyndvara.html">Fyndvara</a>
                 <a href="aboutUs.html">Om Oss</a>
                 <a href="contact.html">Kontakta Oss</a>
             </nav>
         </div>
+    
+        <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
 
         <main class="container center">
-
-
 
             <h1 title="Information angående Covid-19 till våra kunder" class="article-title">
                 Information angående Covid-19 till våra kunder
@@ -99,8 +101,8 @@
         <section class="container article-vote">
             <span class="article-votes-question">Var denna artikel till hjälp?</span>
             <div class="article-votes-controls">
-                <button class="button-yes">Ja</button>
-                <button class="button-no">Nej</button>
+                <button class="button-yes button1">Ja</button>
+                <button class="button-no button1">Nej</button>
             </div>
             <small class="article-votes-count">
                 <p id="voteCounter" class="article-vote-label">Du är den första i omröstningen!</p>
@@ -116,6 +118,9 @@
                 <p class="copyright">All rigths reserved 2021 &copy; </p>
             </div>
         </footer>
+
+    <script src="../JS/burgerMenu.js"></script>
         <script src="../JS/covidInfo.js"></script> 
+        <script src="../JS/scrollBackToTop.js"></script> 
     </body>
 </html>
