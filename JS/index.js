@@ -5,6 +5,10 @@ showPicture(slideIndex);
 function newPicture(n) {
     showPicture(slideIndex += n);
 }
+function currentPicture(n) {
+        showPicture(slideIndex = n);
+
+}
 
 function showPicture(n) {
     var i;
