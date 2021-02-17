@@ -123,10 +123,6 @@ h4 {
     color:var(--green);
 }
 
-/** Mobile Menu **/
-.mobile-menu img {
-    width: 5rem;
-}
 
 /**Grid**/
 .grid{
