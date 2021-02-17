@@ -24,7 +24,7 @@
     background-color: var(--black);
     color: var(--lightBlue);
     cursor: pointer;
-    outline: none;
+    outline: none; /*similar to border, needed for better design*/
     border: 3px solid var(--lightBlue);
     border-radius: 50%;
     transition-duration: 0.2s;
@@ -58,7 +58,7 @@
     }
     to {
       opacity: 1;
-      transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0) rotate(180deg);
     }
   }
   
