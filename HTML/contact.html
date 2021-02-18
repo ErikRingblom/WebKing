@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="script" href="../JS/index.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
     <body>
             <header class="container mainLogo">
@@ -40,16 +41,16 @@
 
 
 
-            <h2 class="fw-700 center-text">Fyll i formularet</h2>
+            <h2 class="fw-700 center-text">Fyll i formuläret</h2>
 
-            <form class="main-form" onsubmit="alertFunction()">
+            <form class="main-form" onsubmit="event.preventDefault(); return alertFunction();">
                 <fieldset>
-                    <legend>Personligt information</legend>
+                    <legend>Personlig information</legend>
                     <label for="namn">Namn</label>
                     <input type="text" id="namn" placeholder="Ditt namn" onkeypress="return /[a-z]/i.test(event.key)">
 
                     <label class="required" for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Ditt Email" required>
+                    <input type="email" id="email" placeholder="Din e-mail" required>
 
                     <label class="required" for="telephone">Telefon</label>
                     <input type="number" id="telefon" placeholder="Ditt telefonnummer" required>
@@ -61,35 +62,55 @@
 
                 <fieldset>
                     <legend>Information om ärendet</legend>
-                    <label for="options">Vad handlar ditt ärendet om:</label>
-                    <select id="options">
-                        <option value="" disabled selected>-- Välj ett --</option>
-                        <option value="Product">Om en produkt</option>
+                    <label class="required" for="options">Vad handlar ditt ärendet om</label>
+                    <select id="options" required>
+                        <option value="" disabled selected>-- Välj en --</option>
+                        <option value="product">Om en produkt</option>
                         <option value="delivery">Om en leverans</option>
-                        <option value="delivery">Service</option>
-                        <option value="delivery">Övrigt</option>
+                        <option value="service">Service</option>
+                        <option value="others">Övrigt</option>
                     </select>
-                    <label>Hur många:</label>
-                    <input type="number" min="0" max="100" step="1">
+                    <div id="product">
+                        <label for="productInput">Ange artikelnummer</label>
+                        <input type="text" id="productInput">
+                    </div>
+                    <div id="delivery">
+                        <label for="deliveryInput">Ange sändingsnummer</label>
+                        <input type="text" id="deliveryInput">
+                    </div>
+                    <div id="service">
+                        <label for="serviceInput">Ange ärendenummer</label>
+                        <input type="text" id="serviceInput">
+                    </div>
+                    <div id="others">
+                        <label for="othersInput">Ge en kort förklaring</label>
+                        <input type="text" id="othersInput">
+                    </div>
+                  <!--  <label>Hur många</label>
+                    <input type="number" min="0" max="100" step="1"> -->
                 </fieldset>
-
                 <fieldset>
                     <legend>Kontakt</legend>
-                    <p>Hur vill du bli kontaktad:</p>
+                    <p class="required">Hur vill du bli kontaktad?</p>
 
-                    <div class="form-contact">
-                        <label for="telefon1">Telefon</label>
-                        <input type="radio" name="contact" value="telefon" id="telefon1">
-                        <label for="email1">E-mail</label>
-                        <input type="radio" name="contact" value="email" id="email1">
+                    <div class="form-contact">                       
+                        <label for="phone" id="labelPhone">Telefon</label>
+                        <input type="radio" name="contact" value="telefon" id="phone" onclick="showContactDetails()" required>                                                                                           
+                        
+                        <label for="email1" id="labelEmail">E-mail</label>
+                        <input type="radio" name="contact" value="email" id="email1" onclick="hideContactDetails()">                                                                      
+                    </div>
+                    <div class="form-contact-details" id="contactDetails">
+                        <p>Välj tid och datum när du vill bli uppringd</p>
+                        <label class="required" for="date">Datum</label>
+                        <input type="date" id="date">
+                        <div id="messageOutput"></div>
+                        <label class="required" for="time">Tid</label>
+                        <input type="time" id="time" min="09:00" max="18:00">
+                        
+
                     </div>
 
-                    <p>Om du har välj telefon, när passar att ringa dig</p>
-                    <label for="date">Datum:</label>
-                    <input type="date" id="date">
-
-                    <label for="time">Tid:</label>
-                    <input type="time" id="time" min="09:00" max="18:00">
                 </fieldset>
 
                 <input type="submit" value="Skicka" class="button button-green">
