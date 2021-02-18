@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snabbt. Enkel. Saker | WebKing är din online webköp</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/productInfo.css">
+    <link rel="stylesheet" href="../css/burgerMenu.css">
+    <link rel="stylesheet" href="../css/scrollBackToTop.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+   
+</head>
+<body>
+    <header class="container mainLogo">
+        <a href="index.html">
+            <img src="../img/WebKingLogo.jpg" alt="WebKing Logo">
+        </a>
+    </header> <!-- Main logo section-->
+
+    <div class="nav-bg ">
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></a></div>
+        </div>
+        
+        <nav id="navigation" class="container fw-700 navigation-primary active">
+            <a href="index.html">Home</a>
+            <a href="product.html">Produkter</a>
+            <a href="fyndvara.html">Fyndvara</a>
+            <a href="aboutUs.html">Om Oss</a>
+            <a href="contact.html">Kontakta Oss</a>
+        </nav>
+    </div>
+
+<button id="back-to-top-btn"><i class="fas fa-angle-double-down"></i></button>
+
+<div id="content-container">
+    <h2 id="product-name"> Samsung TV</h2>
+    <section id="product-picture">
+            <img id="product"  src="../img/phone/note20.png">
+    </section>
+
+    <section id="product-price">
+      <h3 id="total-price"> Total kostnad: <span id="Price">7990</span></h3>
+        <p id="ex-tax-price"> ex moms: </p>
+        <button id="shoppingcart"> lägg i varukorg</button>
+    </section>
+
+    <div id="about">
+        <p>Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit.
+            A, accusantium architecto at dicta distinctio esse est id ipsa iure possimus quasi qui veniam veritatis?
+            Deserunt iure minus praesentium rem voluptates!</p>
+
+    </div>
+    <div id="context-container">
+        <button id="tecnical-information-tab" class="Tab" onclick="openTab(event, 'tecnical-information' )"> Teknisk Information</button>
+        <button id="rewievs-tab" class="Tab" onclick="openTab(event, 'rewievs')">Recensioner</button>
+
+
+    <div id="tecnical-information" class="tabcontent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam distinctio error, itaque modi numquam pariatur perferendis quas quis?
+            Aspernatur cumque error ex facere hic natus officiis quibusdam sequi voluptas voluptatibus.
+        </p>
+    </div>
+    <div id="rewievs" class="tabcontent">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Alias dolorem doloribus exercitationem itaque maxime nobis provident quod velit voluptates!
+            Consequuntur doloribus hic id illo minus recusandae repellendus sapiente tempora voluptas!
+        </p>
+    </div>
+    </div>
+</div>
+
+
+<footer class="site-footer section">
+    <div class="container container-footer">
+        <nav class="navigation-secundary">
+            <a href="aboutUs.html">Om Oss</a>
+            <a href="product.html">Produkter</a>
+            <a href="contact.html">Kontakta oss</a>
+        </nav>
+        <p class="copyright">All rigths reserved 2021 &copy; </p>
+    </div>
+</footer>
+<script src="../JS/productInfo.js"></script>
+<script src="../JS/burgerMenu.js"></script>
+<script src="../JS/scrollBackToTop.js"></script> 
+
+</body>
+</html>
