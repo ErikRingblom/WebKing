@@ -6,11 +6,12 @@
     --white: #ffffff;
     --black:#000;
     --lightBlue:#0097A7;
+    --blue: #0B23EF;
     --grey:#333333;
     --green:#71B100;
     --red: #EF0B0B;
 
-    --mainFont: 'Staatliches', cursive;
+    --mainFont: Arial, Helvetica, sans-serif;
 }
 html {
     box-sizing: border-box;
@@ -25,7 +26,8 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;  /** Reset for REMS - 62.5% = 10px of 16px **/
     line-height: 2;
-    background-image: var(--white);
+    background-image: var(--white);    
+    background-image: linear-gradient(to top, #DFE9F3 0%, #ffffff 100%);
 }
 
 /** Global **/
@@ -82,6 +84,33 @@ h4 {
     margin: auto;
 }
 
+/** button **/
+.button {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    flex: 0 0 100%;
+    width: 100%;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: var(--blue);
+}
+.button-yellow {
+    background-color:  var(--secundary);
+}
+.button-lightBlue {
+    background-color: var(--lightBlue);
+}
+
 /* Header */
 .mainLogo{
     text-align: center;
@@ -135,34 +164,33 @@ h4 {
 
 /** Products **/
 
-.banner_phoneInsurance{
-    background-image: url(../img/banner_phoneInsurance.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-column: 1 / 5;
-    margin: 2rem;
-    width: 100%;
-}
 .banner_phoneShield{
     background-image: url(../img/banner_phone_shield.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
-    grid-column: 1 / 6;
+    background-size: cover;
+    width: 100%;
+    height: 45rem;
+}
+
+.banner_phoneInsurance{
+    background-image: url(../img/banner_phoneInsurance.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 2rem;
     width: 100%;
+    grid-column: 1 / 5;
+
 }
+
 .product {
     background-color: var(--white);
-    padding: 1rem;
-    margin: 2rem auto;
-    border: 1px solid var(--grey);
-    
+    margin: 1rem;
 }
 
 .product__name {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     text-decoration: none;
     color: var(--black);
 }
@@ -170,15 +198,21 @@ h4 {
     font-size: 2.8rem;
     color: var(--red);
 
+
 }
 .product__name,
 .product__price {
-    font-family: var(--mainFont);
+    font-family: Arial, Helvetica, sans-serif;
     margin: 1rem 0;
     text-align: center;
     line-height: 1.2;
 }
-
+.product__name:hover{
+    color: var(--blue);
+}
+.product__price:hover{
+    color: var(--green);
+}
 
 a {
     text-decoration: none;
@@ -249,5 +283,8 @@ a {
     }
     .grid {
         grid-template-columns: repeat(6, 1fr);
+    }
+    .banner_phoneShield{
+        background-position: center center;
     }
 }
