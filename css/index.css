@@ -257,7 +257,7 @@ a {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     width: 100%;
-    
+    height: 1100px;
     grid-template-areas: "product1 product2 product3 product4"
 "phoneimg phoneimg product5 product6 ";
 }
