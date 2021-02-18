@@ -29,8 +29,8 @@
         
         <nav id="navigation" class="container fw-700 navigation-primary active">
             <a href="index.html">Home</a>
-            <a href="product.html">Produkter</a>
-            <a href="fyndvara.html">Fyndvara</a>
+            <a onclick="alertDev()">Produkter</a>
+            <a onclick="alertDev()">Fyndvara</a>
             <a href="aboutUs.html">Om Oss</a>
             <a href="contact.html">Kontakta Oss</a>
         </nav>
@@ -60,11 +60,11 @@
                         <a href="covidInfo.html" class="image image1"></a>
                     </div>
                     <div >
-                       <a href="contact.html" class="image image2"></a>
+                       <a onclick="alertDev()" class="image image2"></a>
 
                     </div>
                     <div class="">
-                       <a href="contact.html" class="image image3"></a>
+                       <a onclick="alertDev()" class="image image3"></a>
 
                     </div>
                 </section>
@@ -79,11 +79,11 @@
            <div class="grid">
 
             <div  id="product1"class="product">
-                <a href="product.html">
-                    <img class="product__img" src="../img/Motorola/motorola2.png" alt="phone">
+                <a href="products/galaxya51Product.html">
+                    <img class="product__img"  src="../img/phone/a51.png" alt="phone">
                     <div class="product__info">
-                        <p class="product__name">Motorola Moto E7 Plus</p>
-                        <p class="product__price">1 590:-</p>
+                        <p class="product__name">Galaxy A51</p>
+                        <p class="product__price">2990:-</p>
                     </div>
                     <button class=" button button-lightBlue">Detaljer</button>
                 </a>
@@ -92,11 +92,11 @@
     
     
             <div  id="product2" class="product">
-                <a href="product.html">
-                    <img class="product__img" src="../img/Motorola/motorola2.png" alt="phone">
+                <a href="products/galaxya12Product.html">
+                    <img class="product__img" src="../img/phone/a12.png" alt="phone">
                     <div class="product__info">
-                        <p class="product__name">Motorola Moto E7 Plus</p>
-                        <p class="product__price">1 590:-</p>
+                        <p class="product__name"> Galaxy A12</p>
+                        <p class="product__price">1990:-</p>
                     </div>
                     <button class=" button button-lightBlue">Detaljer</button>
                 </a>
@@ -105,11 +105,11 @@
     
     
             <div   id="product3" class="product">
-                <a href="product.html">
-                    <img class="product__img" src="../img/Motorola/motorola2.png" alt="phone">
+                <a href="products/galaxyNote20Product.html">
+                    <img class="product__img" src="../img/phone/note20.png" alt="phone">
                     <div class="product__info">
-                        <p class="product__name">Motorola Moto E7 Plus</p>
-                        <p class="product__price">1 590:-</p>
+                        <p class="product__name">Galaxy Note20</p>
+                        <p class="product__price">7990:-</p>
                     </div>
                     <button class=" button button-lightBlue">Detaljer</button>
                 </a>
@@ -118,11 +118,11 @@
     
     
             <div id="product4" class="product">
-                <a href="product.html">
-                    <img class="product__img" src="../img/Motorola/motorola2.png" alt="phone">
+                <a href="products/iphone7Product.html">
+                    <img class="product__img" src="../img/phone/iphone7.png" alt="phone">
                     <div class="product__info">
-                        <p class="product__name">Motorola Moto E7 Plus</p>
-                        <p class="product__price">1 590:-</p>
+                        <p class="product__name">iPhone 7</p>
+                        <p class="product__price">6090:-</p>
                     </div>
                     <button class=" button button-lightBlue">Detaljer</button>
                 </a>
@@ -134,11 +134,11 @@
     
     
             <div id="product5" class="product">
-                <a href="product.html">
-                    <img class="product__img" src="../img/Motorola/motorola2.png" alt="phone">
+                <a href="products/iphone12Product.html">
+                    <img class="product__img" src="../img/phone/iphone12.png"alt="phone">
                     <div class="product__info">
-                        <p class="product__name">Motorola Moto E7 Plus</p>
-                        <p class="product__price">1 590:-</p>
+                        <p class="product__name">iPhone 12</p>
+                        <p class="product__price">9490:-</p>
                     </div>
                     <button class=" button button-lightBlue">Detaljer</button>
                 </a>
@@ -147,11 +147,11 @@
     
     
             <div id="product6" class="product">
-                <a href="product.html">
-                    <img class="product__img" src="../img/Motorola/motorola2.png" alt="phone">
+                <a href="products/iphone12proProduct.html">
+                    <img class="product__img" src="../img/phone/iphone12pro.png" alt="phone">
                     <div class="product__info">
-                        <p class="product__name">Motorola Moto E7 Plus</p>
-                        <p class="product__price">1 590:-</p>
+                        <p class="product__name">iPhone 12 pro</p>
+                        <p class="product__price">12490:-</p>
                     </div>
                     <button class=" button button-lightBlue">Detaljer</button>
                 </a>
@@ -206,7 +206,7 @@
         <div class="container container-footer">
             <nav class="navigation">
                 <a href="aboutUs.html">Om Oss</a>
-                <a href="product.html">Produkter</a>
+                <a onclick="alertDev()">Produkter</a>
                 <a href="contact.html">Kontakta oss</a>
             </nav>
             <p class="copyright">All rigths reserved 2021 &copy; </p>
@@ -214,7 +214,9 @@
     </footer>
         <script src="../JS/burgerMenu.js"></script>
         <script src="../JS/index.js"></script>
-        <script src="../JS/scrollBackToTop.js"></script> 
+        <script src="../JS/scrollBackToTop.js"></script>
+<script src="../JS/develop.js"></script>
+
 
     
 </body>
