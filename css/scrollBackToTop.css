@@ -24,7 +24,7 @@
     background-color: var(--black);
     color: var(--lightBlue);
     cursor: pointer;
-    outline: none; /*similar to border, needed for better design*/
+    outline: none; 
     border: 3px solid var(--lightBlue);
     border-radius: 50%;
     transition-duration: 0.2s;
