@@ -68,6 +68,12 @@ form label.required:after
     content: " *";
 }
 
+form p.required:after
+{
+    color: red;
+    content: " *";
+}
+
 /** Utilities **/
 
 .section {
@@ -175,10 +181,10 @@ select {
     border: none;
     border-radius: 1rem;
 }
-input[type="radio"]{
+/*input[type="radio"]{
     width: 100px;
     margin: auto 0;
-}
+} */
 select {
     -webkit-appearance: none;
     appearance: none;
@@ -195,17 +201,64 @@ textarea {
     flex-wrap: wrap;
     width: min(60rem, 100%);
 }
-.form-contact {
-  /*  max-width:35%; */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
+
 fieldset{
     width: 800px;
     width: min(60rem, 100%); /** no needs of MQ with this. It takes the min value, otherwise it goes to 100%**/ 
     margin:  0 auto;
 }
+
+#product, #delivery, #service, #others{
+    display: none;
+    visibility: hidden;
+}
+
+.form-contact {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "labelPhone phone labelEmail email1";
+    margin: auto;
+    justify-items: center;
+    
+}
+#labelPhone {
+    
+    grid-area: labelPhone;
+    
+}
+#labelEmail {
+    
+    grid-area: labelEmail;
+    
+}
+
+#phone {
+    
+    grid-area: phone;
+    margin-top: 8%;
+    justify-self: start;
+    max-width: 10%;
+}
+
+#email1 {
+    
+    grid-area: email1;
+    margin-top: 8%;
+    justify-self: start;
+    max-width: 10%;
+    
+}
+
+.form-contact-details, #messageOutput{
+    display: none;
+    visibility: hidden;
+}
+
+#messageOutput{
+    color: red;
+}
+
 
 /** button **/
 .button {
@@ -233,14 +286,31 @@ fieldset{
     background-color: #71B100;
 }
 
+.navigation-secundary a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
+
+.navigation-secundary a:hover {
+    color: #71B100;
+}
+
+/** Mobile Menu **/
+.mobile-menu img {
+    width: 5rem;
+}
+
 /** Footer **/
 .site-footer {
     background-color: #333333;
     margin: 0;
 }
+
 .container-footer {
     padding: 3rem 0;
-    text-align: center
+    text-align: center;
 }
 
 .site-footer nav {
@@ -253,7 +323,6 @@ fieldset{
 .navigation-secundary {
     display: none;
 }
-
 
 .copyright {
     margin: 0;
@@ -308,6 +377,19 @@ fieldset{
         display: inline-block;
         width: 5rem;
     }    
+}
+
+@media (max-width:600px) {
+    .form-contact{      
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-areas: "labelPhone phone"
+        "labelEmail email1";
+        
+    }
+    #phone, #email1{
+        margin-top: 6%;
+    }
+
 }
 
 @media (min-width: 486px) {
