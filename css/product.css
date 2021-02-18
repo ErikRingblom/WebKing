@@ -130,20 +130,41 @@ h4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    width: 100%
 }
 
 /** Products **/
+
+.banner_phoneInsurance{
+    background-image: url(../img/banner_phoneInsurance.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column: 1 / 5;
+    margin: 2rem;
+    width: 100%;
+}
+.banner_phoneShield{
+    background-image: url(../img/banner_phone_shield.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column: 1 / 6;
+    margin: 2rem;
+    width: 100%;
+}
 .product {
     background-color: var(--white);
     padding: 1rem;
+    margin: 2rem auto;
+    border: 1px solid var(--grey);
+    
 }
 
 .product__name {
     font-size: 2.8rem;
     text-decoration: none;
     color: var(--black);
-
-
 }
 .product__price {
     font-size: 2.8rem;
@@ -198,6 +219,12 @@ a {
     }
 }
 
+@media(max-width: 480px){
+   .grid{
+       grid-template-columns: repeat(2, 1fr);
+   }
+}
+
 @media (min-width: 768px) {
     .navigation-primary{
         flex-direction: row;
@@ -219,5 +246,8 @@ a {
     }
     .navigation-secundary a:last-of-type {
         margin: 0;
+    }
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
     }
 }
