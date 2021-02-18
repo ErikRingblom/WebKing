@@ -202,10 +202,18 @@ h4 {
 
 
 /**MEDIA QUERIES**/
+
+@media screen and (max-width: 768px) {
+    #navigation.active {
+        display:none
+    }
+}
+
 @media (min-width: 768px) {
     .navigation-primary{
         flex-direction: row;
         justify-content: space-between;
+        margin: auto;
     }
     .aboutUs{
         grid-template-columns: repeat(2, 1fr);

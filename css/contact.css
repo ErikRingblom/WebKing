@@ -1,3 +1,16 @@
+:root{
+    --primary:#9c27b0;
+    --primaryDark:#89119d;
+    --secundary: #FFC107;
+    --secundaryDark: #rgb(233,287,2);
+    --white: #ffffff;
+    --black:#000;
+    --lightBlue:#0097A7;
+    --grey:#333333;
+    --green:#71B100;
+
+    --mainFont: 'Staatliches', cursive;
+}
 html {
     box-sizing: border-box;
     font-size: 62.5%; /** Reset for REMS - 62.5% = 10px of 16px **/
@@ -104,9 +117,6 @@ form p.required:after
 }
 
 /** Navigation **/
-.mobile-menu{
-    display: none;
-}
 .nav-bg{
     background-color: #0097A7;
 
@@ -132,8 +142,16 @@ form p.required:after
 
 }
 
-/** Mobile Ham-Menu **/
+.navigation-secundary a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
 
+.navigation-secundary a:hover {
+    color:var(--green);
+}
 
 
 /** Contact **/
@@ -183,11 +201,6 @@ textarea {
     flex-wrap: wrap;
     width: min(60rem, 100%);
 }
-
-
-/*.form-contact label{
-    width: 100%;
-} */
 
 fieldset{
     width: 800px;
@@ -317,10 +330,19 @@ fieldset{
 }
 
 
+/**MEDIA QUERIES**/
+
+@media screen and (max-width: 768px) {
+    #navigation.active {
+        display:none
+    }
+}
+
 @media (min-width: 786px) {
     .navigation-primary{
         flex-direction: row;
         justify-content: space-between;
+        margin: auto;
     }
     
     .container-footer {

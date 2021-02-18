@@ -8,7 +8,6 @@
     --lightBlue:#0097A7;
     --grey:#333333;
     --green:#71B100;
-    --red: #EF0B0B;
 
     --mainFont: 'Staatliches', cursive;
 }
@@ -88,6 +87,7 @@ h4 {
 }
 
 /** Navigation **/
+
 .nav-bg{
     background-color: var(--lightBlue);
 
@@ -124,65 +124,13 @@ h4 {
     color:var(--green);
 }
 
-
 /**Grid**/
 .grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    width: 100%
 }
 
-/** Products **/
-
-.banner_phoneInsurance{
-    background-image: url(../img/banner_phoneInsurance.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-column: 1 / 5;
-    margin: 2rem;
-    width: 100%;
-}
-.banner_phoneShield{
-    background-image: url(../img/banner_phone_shield.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    grid-column: 1 / 6;
-    margin: 2rem;
-    width: 100%;
-}
-.product {
-    background-color: var(--white);
-    padding: 1rem;
-    margin: 2rem auto;
-    border: 1px solid var(--grey);
-    
-}
-
-.product__name {
-    font-size: 2.8rem;
-    text-decoration: none;
-    color: var(--black);
-}
-.product__price {
-    font-size: 2.8rem;
-    color: var(--red);
-
-}
-.product__name,
-.product__price {
-    font-family: var(--mainFont);
-    margin: 1rem 0;
-    text-align: center;
-    line-height: 1.2;
-}
-
-
-a {
-    text-decoration: none;
-}
 /** Footer **/
 .site-footer {
     background-color:var(--grey);
@@ -211,6 +159,7 @@ a {
     color:var(--white);
 }
 
+
 /**MEDIA QUERIES**/
 
 @media screen and (max-width: 768px) {
@@ -219,18 +168,13 @@ a {
     }
 }
 
-@media(max-width: 480px){
-   .grid{
-       grid-template-columns: repeat(2, 1fr);
-   }
-}
-
 @media (min-width: 768px) {
     .navigation-primary{
         flex-direction: row;
         justify-content: space-between;
         margin: auto;
     }
+    
     .container-footer {
         display: flex;
         justify-content: space-between;
@@ -246,8 +190,5 @@ a {
     }
     .navigation-secundary a:last-of-type {
         margin: 0;
-    }
-    .grid {
-        grid-template-columns: repeat(6, 1fr);
     }
 }

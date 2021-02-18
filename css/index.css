@@ -147,11 +147,52 @@ h4 {
             "section section section sidebar";
 }
 .slideshow{
-    grid-column-start: 1;
-    grid-column-end: 8;
 border: 1px solid black;
 grid-area: section;
+    position: relative;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
 
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot:hover {
+    background-color: #717171;
+}
+
+
+
+slides{
+    width: 100%;
+    height: 100%    ;
 }
 
 
@@ -164,6 +205,37 @@ grid-area: section;
     box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
     background-color: #ffffff;
 
+}
+
+#panel{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin: auto;
+    border: 1px solid black;
+    grid-template-areas: "product1 product2 . ." ;
+
+}
+#product1{
+    grid-area: product1;
+    width: 300px;
+    height: 150px;
+}
+#product2{
+    grid-area: product2;
+    width: 300px;
+    height: 150px;
+}
+.products{
+    justify-content: center;
+    justify-items: center;
+}
+#sidebar-for-special{
+border: 1px solid black;
+}
+#sidebar-content{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
 }
 
 
@@ -213,6 +285,7 @@ grid-area: section;
 
 }
 
+
 /** Footer **/
 .site-footer {
     background-color: #333333;
@@ -233,11 +306,20 @@ grid-area: section;
 }
 
 
+/**MEDIA QUERIES**/
+
+@media screen and (max-width: 768px) {
+    #navigation.active {
+        display:none
+    }
+}
+
 
 @media (min-width: 768px) {
     .navigation-primary{
         flex-direction: row;
         justify-content: space-between;
+        margin: auto;
     }
     .container-footer {
         display: flex;
@@ -265,9 +347,6 @@ grid-area: section;
     }
     .navigation {
         display: block;
-    }
-    .mobile-menu {
-        display: none;
     }
     .navigation a {
         display: inline-block;
