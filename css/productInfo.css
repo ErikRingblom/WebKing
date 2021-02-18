@@ -55,6 +55,8 @@ h4 {
     font-size: 2.6rem;
 }
 
+
+
 /** Utilities **/
 
 .section {
@@ -79,6 +81,19 @@ h4 {
 .contained-center a {
     display: grid;
     margin: auto;
+}
+
+.greyOut{
+    color: grey;
+}
+.comments{
+    border-bottom: 5px solid grey;
+
+}
+
+.comments:last-of-type {
+    border-bottom: none;
+    
 }
 
 /* Header */
@@ -208,6 +223,7 @@ align-self: center;
 }
 #about{
     grid-area: about;
+    padding: 10px;
 }
 .tabcontent{
     grid-area: tabcontent;
