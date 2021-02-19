@@ -382,8 +382,10 @@ a {
     .grid{
         grid-template-columns: repeat(3,1fr);
         grid-template-areas: "product1 product2 product3"
-        "phoneimg phoneimg phoneimg"
     "product4 product5 product6";
+    }
+    #phoneIMG{
+        display: none;
     }
 }
 
@@ -449,7 +451,7 @@ a {
                 "product1 product2"
             "product3 product4"
         "product5 product6";
-
+        height: 1800px;
 
     }
     #phoneIMG{
