@@ -12,6 +12,9 @@ function openTab(event, Tabname ) {
     document.getElementById(Tabname).style.display = "block";
     event.currentTarget.className += " active";
 }
+function shoppingcart(){
+    alert("Din produkt har lagts till i din varukorg")
+}
 
 let totalPrice = document.getElementById("Price").innerHTML;
 let exPrice = totalPrice * 0.75;

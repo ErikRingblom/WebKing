@@ -15,7 +15,7 @@
 </head>
 <body>
     <header class="container mainLogo">
-        <a href="index.html">
+        <a href="../../index.html">
             <img src="../../img/WebKingLogo.jpg" alt="WebKing Logo">
         </a>
     </header> <!-- Main logo section-->
@@ -26,11 +26,11 @@
         </div>
         
         <nav id="navigation" class="container fw-700 navigation-primary active">
-            <a href="index.html">Home</a>
-            <a href="product.html">Produkter</a>
-            <a href="fyndvara.html">Fyndvara</a>
-            <a href="aboutUs.html">Om Oss</a>
-            <a href="contact.html">Kontakta Oss</a>
+            <a href="../../index.html">Home</a>
+            <a onclick="alertDev()">Produkter</a>
+            <a onclick="alertDev()">Fyndvara</a>
+            <a href="../aboutUs.html">Om Oss</a>
+            <a href="../contact.html">Kontakta Oss</a>
         </nav>
     </div>
 
@@ -79,16 +79,18 @@
 <footer class="site-footer section">
     <div class="container container-footer">
         <nav class="navigation-secundary">
-            <a href="aboutUs.html">Om Oss</a>
-            <a href="product.html">Produkter</a>
-            <a href="contact.html">Kontakta oss</a>
+            <a href="../aboutUs.html">Om Oss</a>
+            <a onclick="alertDev()">Produkter</a>
+            <a href="../contact.html">Kontakta oss</a>
         </nav>
         <p class="copyright">All rigths reserved 2021 &copy; </p>
     </div>
 </footer>
 <script src="../../JS/productInfo.js"></script>
 <script src="../../JS/burgerMenu.js"></script>
-<script src="../../JS/scrollBackToTop.js"></script> 
+<script src="../../JS/scrollBackToTop.js"></script>
+    <script src="../../JS/develop.js"></script>
+
 
 </body>
 </html>
